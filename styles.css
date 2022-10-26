@@ -1,0 +1,34 @@
+.header {
+  background-color:blueviolet;
+  border: 3px solid blue;
+}
+.nav {
+  display: flex;
+  justify-content: space-between;
+  height: 15vh;
+}
+.menu {
+  display: flex;
+  list-style: none;
+  justify-content: space-evenly;
+  width: 30%;
+}
+
+.rightHeading {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+
+}
+
+.allProfileCards {
+  display: grid | inline-flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.profileCards {
+  border: 3px solid red;
+  display: flex;
+  flex-direction: column;
+}
