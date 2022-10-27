@@ -4,7 +4,6 @@ body {
 }
 .header {
   background-color:#84a59d;
-  border: 3px solid blue;
 }
 
 .nav {
@@ -17,8 +16,18 @@ body {
   list-style: none;
   justify-content: space-evenly;
   width: 30%;
+  align-items: flex-end;
+}
+.menu-item:hover {
+  border-bottom: 4px solid #f28482;
+  cursor: pointer;
 }
 
+.profileCards:hover {
+  cursor: pointer;
+  border: 10px solid #f6bd60;
+
+}
 .rightHeading {
   display: flex;
   flex-direction: column;
@@ -29,35 +38,58 @@ body {
 .allProfileCards {
   display: grid;
   grid-template-columns: [first] 20% [line2] 20% [line3] 20% [line4] 20%[end];
+  grid-template-rows: repeat(auto-fill, minmax(200px, 1fr));
   justify-content: space-evenly;
-  gap: 1.50rem;
+  column-gap: 9px; 
+  row-gap: 160px;
 }
 
 .profileCards {
   border-radius: 5%;
   display: flex;
   flex-direction: column;
-  border: 1px solid red;
+  border: 5px solid #f6bd60;
   align-items: center;
+  height: 148%;
 }
 
 img {
- height: 46%;
- width: 100%;
+  height: 56%;
+  width: 62%;
  border-radius: 5%;
 }
 
 .share {
-  height: 23%;
-  width: 23%;
+  height: 37px;
+  width: 37px;
   border-radius: 100%;
+  background-image: url("./arrow-icon.png");
+  background-color: #f28482;
+  background-position: top;
+  background-size: cover;
+
+
 }
 .imageCard {
-  background-image: url("./dog-picture.jpg");
-  /* position: relative; */
+  background-image: url("./dog.jpg");
   width: 100%;
   height: 92%;
+  background-position: top;
+  background-size: cover;
+  display: flex;
+  justify-content: space-between;
 }
 
-  /* position: absolute; */
-  /* top: 40px; left: 40px; */
+.views {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  align-items: flex-end;
+  color: white;
+}
+
+.views-title, .views-number {
+  margin: 0;
+
+
+}
